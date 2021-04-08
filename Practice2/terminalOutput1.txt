@@ -1,0 +1,163 @@
+Last login: Wed Apr  7 13:59:09 on ttys000
+~/J/Oracle_Java-Complete-Programming ❯❯❯ ls
+Practice1.1
+~/J/Oracle_Java-Complete-Programming ❯❯❯ cd Oracle_Java-Complete-Programmingpra
+cd: no such file or directory: Oracle_Java-Complete-Programmingpra
+~/J/Oracle_Java-Complete-Programming ❯❯❯ Practice1.1                                                                                                                                                                           ✘ 1 
+~/J/O/Practice1.1 ❯❯❯ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+~/J/O/Practice1.1 ❯❯❯ whoami
+aszit
+~/J/O/Practice1.1 ❯❯❯ cd ..
+~/J/Oracle_Java-Complete-Programming ❯❯❯ mkdir Practise2
+~/J/Oracle_Java-Complete-Programming ❯❯❯ rm Practise2
+rm: Practise2: is a directory
+~/J/Oracle_Java-Complete-Programming ❯❯❯ rm -f Practise2                                               ✘ 1 
+rm: Practise2: is a directory
+~/J/Oracle_Java-Complete-Programming ❯❯❯ rm -rf Practise2                                              ✘ 1 
+~/J/Oracle_Java-Complete-Programming ❯❯❯ ls
+Practice1.1
+~/J/Oracle_Java-Complete-Programming ❯❯❯ mkdir Practice2
+~/J/Oracle_Java-Complete-Programming ❯❯❯ cd Practice2
+~/J/O/Practice2 ❯❯❯ jshell
+|  Welcome to JShell -- Version 11.0.10
+|  For an introduction type: /help intro
+
+jshell> byte x=2, y=3, z=5;
+x ==> 2
+y ==> 3
+z ==> 5
+
+jshell> z=x+y;
+|  Error:
+|  incompatible types: possible lossy conversion from int to byte
+|  z=x+y;
+|    ^-^
+
+jshell> z=(byte)(x+y);
+z ==> 5
+
+jshell> float a = (float)(a/b);
+|  Error:
+|  cannot find symbol
+|    symbol:   variable b
+|  float a = (float)(a/b);
+|                      ^
+
+jshell> float a = (float)(x/y);
+a ==> 0.0
+
+jshell> float a = (float)x/y;
+a ==> 0.6666667
+
+jshell> double b = (double)x/y;
+b ==> 0.6666666666666666
+
+jshell> b
+b ==> 0.6666666666666666
+
+jshell> b=a;
+b ==> 0.6666666865348816
+
+jshell> float c = Math.round(b*1000)/1000F;
+c ==> 0.667
+
+jshell> char a1='a', a2='\141', a3='\u0061';
+a1 ==> 'a'
+a2 ==> 'a'
+a3 ==> 'a'
+
+jshell> int i = a1;
+i ==> 97
+
+jshell> (chr)i
+|  Error:
+|  cannot find symbol
+|    symbol:   class chr
+|  (chr)i
+|   ^-^
+
+jshell> (char)i
+$15 ==> 'a'
+
+jshell> int i1 = 0141, i2=0x61;
+i1 ==> 97
+i2 ==> 97
+
+jshell> char a4 = (char)i1;
+a4 ==> 'a'
+
+jshell> char someChar ='s';
+someChar ==> 's'
+
+jshell> boolean isEven = (someChar%2 == 0);
+isEven ==> false
+
+jshell> someChar ='k';
+someChar ==> 'k'
+
+jshell> char nextChar=(char)(someChar+1);
+nextChar ==> 'l'
+
+jshell> char nextChar = ++someChar;
+nextChar ==> 'l'
+
+jshell> someChar
+someChar ==> 'l'
+
+jshell> someChar ='b';
+someChar ==> 'b'
+
+jshell> --someChar;
+$26 ==> 'a'
+
+jshell> someChar
+someChar ==> 'a'
+
+jshell> --someChar;
+$28 ==> '`'
+
+jshell> --someChar;
+$29 ==> '_'
+
+jshell> --someChar;
+$30 ==> '^'
+
+jshell> --someChar;
+$31 ==> ']'
+
+jshell> --someChar;
+$32 ==> '\\'
+
+jshell> --someChar;
+$33 ==> '['
+
+jshell> --someChar;
+$34 ==> 'Z'
+
+jshell> --someChar;
+$35 ==> 'Y'
+
+jshell> char upperA ='A', lowerA='a'; 
+upperA ==> 'A'
+lowerA ==> 'a'
+
+jshell> int distance = lo
+lowerA   
+
+<press tab again to see all possible completions>
+jshell> int distance = lo
+long     lowerA   
+jshell> int distance = lowerA - upperA;
+distance ==> 32
+
+jshell> someChar='h';
+someChar ==> 'h'
+
+jshell> char upperSomeChar = (char)(someChar-32);
+upperSomeChar ==> 'H'
+
+jshell> 
