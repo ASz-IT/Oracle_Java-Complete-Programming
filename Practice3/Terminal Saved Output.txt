@@ -1,0 +1,912 @@
+Last login: Wed Apr  7 13:59:09 on ttys000
+~/J/Oracle_Java-Complete-Programming ❯❯❯ ls
+Practice1.1
+~/J/Oracle_Java-Complete-Programming ❯❯❯ cd Oracle_Java-Complete-Programmingpra
+cd: no such file or directory: Oracle_Java-Complete-Programmingpra
+~/J/Oracle_Java-Complete-Programming ❯❯❯ Practice1.1                                                                                                                                                                           ✘ 1 
+~/J/O/Practice1.1 ❯❯❯ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+~/J/O/Practice1.1 ❯❯❯ whoami
+aszit
+~/J/O/Practice1.1 ❯❯❯ cd ..
+~/J/Oracle_Java-Complete-Programming ❯❯❯ mkdir Practise2
+~/J/Oracle_Java-Complete-Programming ❯❯❯ rm Practise2
+rm: Practise2: is a directory
+~/J/Oracle_Java-Complete-Programming ❯❯❯ rm -f Practise2                                               ✘ 1 
+rm: Practise2: is a directory
+~/J/Oracle_Java-Complete-Programming ❯❯❯ rm -rf Practise2                                              ✘ 1 
+~/J/Oracle_Java-Complete-Programming ❯❯❯ ls
+Practice1.1
+~/J/Oracle_Java-Complete-Programming ❯❯❯ mkdir Practice2
+~/J/Oracle_Java-Complete-Programming ❯❯❯ cd Practice2
+~/J/O/Practice2 ❯❯❯ jshell
+|  Welcome to JShell -- Version 11.0.10
+|  For an introduction type: /help intro
+
+jshell> byte x=2, y=3, z=5;
+x ==> 2
+y ==> 3
+z ==> 5
+
+jshell> z=x+y;
+|  Error:
+|  incompatible types: possible lossy conversion from int to byte
+|  z=x+y;
+|    ^-^
+
+jshell> z=(byte)(x+y);
+z ==> 5
+
+jshell> float a = (float)(a/b);
+|  Error:
+|  cannot find symbol
+|    symbol:   variable b
+|  float a = (float)(a/b);
+|                      ^
+
+jshell> float a = (float)(x/y);
+a ==> 0.0
+
+jshell> float a = (float)x/y;
+a ==> 0.6666667
+
+jshell> double b = (double)x/y;
+b ==> 0.6666666666666666
+
+jshell> b
+b ==> 0.6666666666666666
+
+jshell> b=a;
+b ==> 0.6666666865348816
+
+jshell> float c = Math.round(b*1000)/1000F;
+c ==> 0.667
+
+jshell> char a1='a', a2='\141', a3='\u0061';
+a1 ==> 'a'
+a2 ==> 'a'
+a3 ==> 'a'
+
+jshell> int i = a1;
+i ==> 97
+
+jshell> (chr)i
+|  Error:
+|  cannot find symbol
+|    symbol:   class chr
+|  (chr)i
+|   ^-^
+
+jshell> (char)i
+$15 ==> 'a'
+
+jshell> int i1 = 0141, i2=0x61;
+i1 ==> 97
+i2 ==> 97
+
+jshell> char a4 = (char)i1;
+a4 ==> 'a'
+
+jshell> char someChar ='s';
+someChar ==> 's'
+
+jshell> boolean isEven = (someChar%2 == 0);
+isEven ==> false
+
+jshell> someChar ='k';
+someChar ==> 'k'
+
+jshell> char nextChar=(char)(someChar+1);
+nextChar ==> 'l'
+
+jshell> char nextChar = ++someChar;
+nextChar ==> 'l'
+
+jshell> someChar
+someChar ==> 'l'
+
+jshell> someChar ='b';
+someChar ==> 'b'
+
+jshell> --someChar;
+$26 ==> 'a'
+
+jshell> someChar
+someChar ==> 'a'
+
+jshell> --someChar;
+$28 ==> '`'
+
+jshell> --someChar;
+$29 ==> '_'
+
+jshell> --someChar;
+$30 ==> '^'
+
+jshell> --someChar;
+$31 ==> ']'
+
+jshell> --someChar;
+$32 ==> '\\'
+
+jshell> --someChar;
+$33 ==> '['
+
+jshell> --someChar;
+$34 ==> 'Z'
+
+jshell> --someChar;
+$35 ==> 'Y'
+
+jshell> char upperA ='A', lowerA='a'; 
+upperA ==> 'A'
+lowerA ==> 'a'
+
+jshell> int distance = lo
+lowerA   
+
+<press tab again to see all possible completions>
+jshell> int distance = lo
+long     lowerA   
+jshell> int distance = lowerA - upperA;
+distance ==> 32
+
+jshell> someChar='h';
+someChar ==> 'h'
+
+jshell> char upperSomeChar = (char)(someChar-32);
+upperSomeChar ==> 'H'
+
+jshell> /open script1.txt
+
+jshell> /list
+
+   1 : byte x=2, y=3, z=5;
+   2 : byte x=2, y=3, z=5;
+   3 : byte x=2, y=3, z=5;
+   4 : z=(byte)(x+y);
+   6 : float a = (float)x/y;
+   7 : double b = (double)x/y;
+   8 : b
+   9 : b=a;
+  10 : float c = Math.round(b*1000)/1000F;
+  11 : char a1='a', a2='\141', a3='\u0061';
+  12 : char a1='a', a2='\141', a3='\u0061';
+  13 : char a1='a', a2='\141', a3='\u0061';
+  14 : int i = a1;
+  15 : (char)i
+  16 : int i1 = 0141, i2=0x61;
+  17 : int i1 = 0141, i2=0x61;
+  18 : char a4 = (char)i1;
+  20 : boolean isEven = (someChar%2 == 0);
+  21 : someChar ='k';
+  23 : char nextChar = ++someChar;
+  24 : someChar
+  25 : someChar ='b';
+  26 : --someChar;
+  27 : someChar
+  28 : --someChar;
+  29 : --someChar;
+  30 : --someChar;
+  31 : --someChar;
+  32 : --someChar;
+  33 : --someChar;
+  34 : --someChar;
+  35 : --someChar;
+  36 : char upperA ='A', lowerA='a';
+  37 : char upperA ='A', lowerA='a';
+  38 : int distance = lowerA - upperA;
+  39 : someChar='h';
+  40 : char upperSomeChar = (char)(someChar-32);
+  41 : char someChar = 'q';
+  42 : if (someChar >= 'a' && someChar <= 'z'){
+       	someChar -= 32;
+       } else {
+       	someChar += 32;
+       }
+
+jshell> someChar
+someChar ==> 'Q'
+
+jshell> someChar
+someChar ==> 'Q'
+
+jshell> /open script1.txt
+
+jshell> someChar
+someChar ==> 'Q'
+
+jshell> /open script1.txt
+
+jshell> someChar
+someChar ==> 'q'
+
+jshell> someChar = (someChar >= 'a' && someChar <= 'z') ? (char)(someChar-32) : (char)(someChar+32);
+someChar ==> 'Q'
+
+jshell> someChar = (someChar >= 'a' && someChar <= 'z') ? (char)(someChar-32) : (char)(someChar+32);
+someChar ==> 'q'
+
+jshell> someChar = (someChar >= 'a' && someChar <= 'z') ? (char)(someChar-32) : (char)(someChar+32);
+someChar ==> 'Q'
+
+jshell> someChar = 'a'
+someChar ==> 'a'
+
+jshell> someChar = (someChar >= 'a' && someChar <= 'z') ? (char)(someChar-32) : (char)(someChar+32);
+someChar ==> 'A'
+
+jshell> /open script2.txt
+|  Error:
+|  cannot find symbol
+|    symbol:   variable amount
+|  	amount += amount+rate;
+|   ^----^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable amount
+|  	amount += amount+rate;
+|             ^----^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable amount
+|  	amount += amount+rate;
+|   ^----^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable amount
+|  	amount += amount+rate;
+|             ^----^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable amount
+|  	amount += amount+rate;
+|   ^----^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable amount
+|  	amount += amount+rate;
+|             ^----^
+
+jshell> /open script2.txt
+
+jshell> am
+ammount   amount    
+jshell> am
+|  Error:
+|  cannot find symbol
+|    symbol:   variable am
+|  am
+|  ^^
+
+jshell> amount
+amount ==> 20.05
+
+jshell> /open script2.txt
+
+jshell> amount
+amount ==> 80.34999
+
+jshell> /open script2.txt
+
+jshell> amount
+amount ==> 11.57625
+
+jshell> /open script2.txt
+
+jshell> amount
+amount ==> 11.57625
+
+jshell> /open script2.txt
+
+jshell> amount
+amount ==> 12.0
+
+jshell> /exit
+|  Goodbye
+~/J/O/Practice2 ❯❯❯ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+~/J/O/Practice2 ❯❯❯ ls
+script1.txt         script2.txt         terminalOutput1.txt
+~/J/O/Practice2 ❯❯❯ git add .
+~/J/O/Practice2 ❯❯❯ cd ..
+~/J/Oracle_Java-Complete-Programming ❯❯❯ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   Practice2/.script2.txt.swp
+	new file:   Practice2/script1.txt
+	new file:   Practice2/script2.txt
+	new file:   Practice2/terminalOutput1.txt
+
+~/J/Oracle_Java-Complete-Programming ❯❯❯ git commit -m "add Practice2 lab exercise"
+[master 1fc2f3b] add Practice2 lab exercise
+ 4 files changed, 186 insertions(+)
+ create mode 100644 Practice2/.script2.txt.swp
+ create mode 100644 Practice2/script1.txt
+ create mode 100644 Practice2/script2.txt
+ create mode 100644 Practice2/terminalOutput1.txt
+~/J/Oracle_Java-Complete-Programming ❯❯❯ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.98 KiB | 1.98 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To github.com:ASzz/Oracle_Java-Complete-Programming.git
+   739b98a..1fc2f3b  master -> master
+~/J/Oracle_Java-Complete-Programming ❯❯❯ jshell
+|  Welcome to JShell -- Version 11.0.10
+|  For an introduction type: /help intro
+
+jshell> int a = 1;
+a ==> 1
+
+jshell> int b = a;
+b ==> 1
+
+jshell> ++a;
+$3 ==> 2
+
+jshell> a
+a ==> 2
+
+jshell> b
+b ==> 1
+
+jshell> String prim = "oryginal";
+prim ==> "oryginal"
+
+jshell> String copy = prim;
+copy ==> "oryginal"
+
+jshell> prim = "changed oryginal";
+prim ==> "changed oryginal"
+
+jshell> copy
+copy ==> "oryginal"
+
+jshell> ls
+|  Error:
+|  cannot find symbol
+|    symbol:   variable ls
+|  ls
+|  ^^
+
+jshell> /exit
+|  Goodbye
+~/J/Oracle_Java-Complete-Programming ❯❯❯ cd Practice3
+~/J/O/Practice3 ❯❯❯ jshell
+|  Welcome to JShell -- Version 11.0.10
+|  For an introduction type: /help intro
+
+jshell> String teaTxt = "Tea";
+teaTxt ==> "Tea"
+
+jshell> String b = "Tea"
+b ==> "Tea"
+
+jshell> teaTxt == b
+$3 ==> true
+
+jshell> String c = new String("Tea");
+c ==> "Tea"
+
+jshell> teaTxt == c
+$5 ==> false
+
+jshell> c.in
+indexOf(   intern()   
+jshell> c.intern()
+$6 ==> "Tea"
+
+jshell> teaTxt == c
+$7 ==> false
+
+jshell> String d = c.intern();
+d ==> "Tea"
+
+jshell> teaTxt == d
+$9 ==> true
+
+jshell> c = teaTxt+' '+b;
+c ==> "Tea Tea"
+
+jshell> c.indexOf('T', 1);
+$11 ==> 4
+
+jshell> c.lastIndexOf('T');
+$12 ==> 4
+
+jshell> c.charAt(c.length()-1);
+$13 ==> 'a'
+
+jshell> c = c.toUpperCase();
+c ==> "TEA TEA"
+
+jshell> c.sub
+subSequence(   substring(     
+jshell> c.substring(c.lastIndexOf('T'), c.lastIndexOf('T')+2)
+$15 ==> "TE"
+
+jshell> c.substring(c.lastIndexOf('T'), c.length())
+$16 ==> "TEA"
+
+jshell> String
+String                            StringBuffer                      StringBufferInputStream           
+StringBuilder                     StringIndexOutOfBoundsException   StringJoiner                      
+StringReader                      StringTokenizer                   StringWriter                      
+
+Signatures:
+java.lang.String
+
+<press tab again to see documentation>
+jshell> StringBu
+StringBuffer              StringBufferInputStream   StringBuilder             
+jshell> StringBuilder txt = new Stri
+StringBuilder(   
+
+<press tab again to see all possible completions>
+jshell> StringBuilder txt = new StringBu
+StringBuilder(   
+
+<press tab again to see all possible completions>
+jshell> StringBuilder txt = new StringBuilder(c);
+txt ==> TEA TEA
+
+jshell> txt.lengtch();
+|  Error:
+|  cannot find symbol
+|    symbol:   method lengtch()
+|  txt.lengtch();
+|  ^---------^
+
+jshell> txt.length();
+$18 ==> 7
+
+jshell> txt.capasity();
+|  Error:
+|  cannot find symbol
+|    symbol:   method capasity()
+|  txt.capasity();
+|  ^----------^
+
+jshell> txt.capacity();
+$19 ==> 23
+
+jshell> txt.replace(0,3, "What is the price of");
+$20 ==> What is the price of TEA
+
+jshell> txt.capasity();
+|  Error:
+|  cannot find symbol
+|    symbol:   method capasity()
+|  txt.capasity();
+|  ^----------^
+
+jshell> txt.length();
+$21 ==> 24
+
+jshell> txt.capacity();
+$22 ==> 48
+
+jshell> double price = 1.85;
+price ==> 1.85
+
+jshell> double rate = 0.65;
+rate ==> 0.65
+
+jshell> price -= price*rate;
+$25 ==> 0.6475
+
+jshell> price = Mat
+MatchResult   Matcher       Math          MathContext   
+jshell> price = Math.round(price*100)/100.0;
+price ==> 0.65
+
+jshell> double rate = 0.065;
+rate ==> 0.065
+
+jshell> price -= price*rate;
+$28 ==> 0.60775
+
+jshell> price = Math.round(price*100)/100.0;
+price ==> 0.61
+
+jshell> double price = 1.85;
+price ==> 1.85
+
+jshell> price -= price*rate;
+$31 ==> 1.7297500000000001
+
+jshell> price = Math.round(price*100)/100.0;
+price ==> 1.73
+
+jshell> import java.math.Big
+BigDecimal   BigInteger   
+jshell> import java.math.Big
+BigDecimal   BigInteger   
+jshell> import java.math.BigDecimal
+
+jshell> import java.math.RoundingMode
+
+jshell> Big
+BigDecimal   BigInteger   
+jshell> BigDecimal price = BigDecimal.valueOf(1.85);
+price ==> 1.85
+
+jshell> BigDecimal rate = BigDecimal.valueOf(0.065);
+rate ==> 0.065
+
+jshell> price = price.subtract(
+price   rate    
+
+Signatures:
+BigDecimal BigDecimal.subtract(BigDecimal subtrahend)
+BigDecimal BigDecimal.subtract(BigDecimal subtrahend, MathContext mc)
+
+<press tab again to see documentation>
+jshell> price = price.subtract(
+BigDecimal BigDecimal.subtract(BigDecimal subtrahend)
+Returns a BigDecimal whose value is (this - subtrahend) , and whose scale is max(this.scale(),
+subtrahend.scale()) .
+
+Parameters:
+subtrahend - value to be subtracted from this BigDecimal .
+
+Returns:
+this - subtrahend 
+
+<press tab to see next documentation>
+jshell> price = price.subtract((price.multiply(rate)).setScale(2, RoundingMode.H
+HALF_DOWN   HALF_EVEN   HALF_UP     
+jshell> price = price.subtract(price.multiply(rate)).setScale(2, RoundingMode.HALF_UP)
+price ==> 1.73
+
+jshell> Locale locale = Locale.FR
+Unexpected character after Shift-Tab.
+Use "i" for auto-import, "v" for variable creation, or "m" for method creation.
+For more information see:
+/help shortcuts
+jshell> Locale locale = Locale.FRANCE;
+locale ==> fr_FR
+
+jshell> NumberFormat currencyFormat = Numbe
+Number                  NumberFormatException   
+jshell> NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+|  Error:
+|  cannot find symbol
+|    symbol:   class NumberFormat
+|  NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+|  ^----------^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable NumberFormat
+|  NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+|                                ^----------^
+
+jshell> import java.text.NumberFormat;
+
+jshell> NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+currencyFormat ==> java.text.DecimalFormat@674dc
+
+jshell> Num
+Number                  NumberFormat            NumberFormatException   
+jshell> NumberFo
+NumberFormat            NumberFormatException   
+jshell> NumberFormat percentFormat = NumberF
+NumberFormat            NumberFormatException   
+jshell> NumberFormat percentFormat = NumberFormat.getPercentInstance(locale);
+percentFormat ==> java.text.DecimalFormat@674dc
+
+jshell> percentFormat.set
+setCurrency(                setGroupingUsed(            setMaximumFractionDigits(   setMaximumIntegerDigits(    
+setMinimumFractionDigits(   setMinimumIntegerDigits(    setParseIntegerOnly(        setRoundingMode(            
+jshell> percentFormat.setMax
+setMaximumFractionDigits(   setMaximumIntegerDigits(    
+jshell> percentFormat.setMaximumFractionDigits(2);
+
+jshell> currencyFormat.form
+format(                      formatToCharacterIterator(   
+jshell> currencyFormat.format(price);
+$43 ==> "1,73 €"
+
+jshell> percentFormat.format(rate);
+$44 ==> "6,5 %"
+
+jshell> locale. = Locale.UK;
+|  Error:
+|  <identifier> expected
+|  locale. = Locale.UK;
+|         ^
+
+jshell> locale = Locale.UK;
+locale ==> en_GB
+
+jshell> NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+currencyFormat ==> java.text.DecimalFormat@6757f
+
+jshell> NumberFormat percentFormat = NumberFormat.getPercentInstance(locale);
+percentFormat ==> java.text.DecimalFormat@674dc
+
+jshell> percentFormat.setMaximumFractionDigits(2);
+
+jshell> String priceTxt = currencyFormat.format(price);
+priceTxt ==> "£1.73"
+
+jshell> String rateTxt = pr
+priceTxt   
+
+<press tab again to see all possible completions>
+jshell> String rateTxt = percentFormat.format(rate);
+rateTxt ==> "6.5%"
+
+jshell> import java.time.*
+
+jshell> Local
+LocalDate       LocalDateTime   LocalTime       Locale          
+jshell> LocalD
+LocalDate       LocalDateTime   
+jshell> LocalDate today =Local
+LocalDate       LocalDateTime   LocalTime       Locale          
+jshell> LocalDate today =LocalD
+LocalDate       LocalDateTime   
+jshell> LocalDate today =LocalDate.now();
+today ==> 2021-04-08
+
+jshell> today.plusYears(1).getD
+getDayOfMonth()   getDayOfWeek()    getDayOfYear()    
+jshell> today.plusYears(1).getDayOfWeek()
+$53 ==> FRIDAY
+
+jshell> LocalTime teaTime = Loca
+LocalDate       LocalDateTime   LocalTime       Locale          
+jshell> LocalTime teaTime = LocalTime.of(17,30);
+teaTime ==> 17:30
+
+jshell> Duration timeGap = Duration.between(LocalTime.now(), teaTime);
+timeGap ==> PT-2H-16M-25.0519S
+
+jshell> timeGap.to
+toDays()          toDaysPart()      toHours()         toHoursPart()     toMillis()        toMillisPart()    toMinutes()       
+toMinutesPart()   toNanos()         toNanosPart()     toSeconds()       toSecondsPart()   toString()        
+jshell> timeGap.toMi
+toMillis()        toMillisPart()    toMinutes()       toMinutesPart()   
+jshell> timeGap.toMin
+toMinutes()       toMinutesPart()   
+jshell> timeGap.toMinutes();
+$56 ==> -136
+
+jshell> timeGap.toHo
+toHours()       toHoursPart()   
+jshell> timeGap.toHoursurs();
+|  Error:
+|  cannot find symbol
+|    symbol:   method toHoursurs()
+|  timeGap.toHoursurs();
+|  ^----------------^
+
+jshell> timeGap.toHours();
+$57 ==> -2
+
+jshell> timeGap.toMinutesPart()();
+|  Error:
+|  ';' expected
+|  timeGap.toMinutesPart()();
+|                         ^
+
+jshell> timeGap.toMinutesPart();
+$58 ==> -16
+
+jshell> LocalDateTime tomorrowTeaTime = LocalDateTime.of(17,30);
+|  Error:
+|  incompatible types: int cannot be converted to java.time.LocalDate
+|  LocalDateTime tomorrowTeaTime = LocalDateTime.of(17,30);
+|                                                   ^^
+
+jshell> LocalDateTime tomorrowTeaTime = LocalDateTime.of(today.plusDays(1), te);
+teaTime   
+
+<press tab again to see all possible completions>
+jshell> LocalDateTime tomorrowTeaTime = LocalDateTime.of(today.plusDays(1), teaTime);
+tomorrowTeaTime ==> 2021-04-09T17:30
+
+jshell> Zone
+ZoneId          ZoneOffset      ZonedDateTime   
+jshell> ZoneId london = ZoneId.of
+of(         ofOffset(   
+jshell> ZoneId london = ZoneId.of("Europe/London");
+london ==> Europe/London
+
+jshell> ZoneId katmandu = ZoneId.of("Asia/Katmandu");
+katmandu ==> Asia/Katmandu
+
+jshell> ZonedDateTime londonTime = Zon
+ZoneId          ZoneOffset      ZonedDateTime   
+jshell> ZonedDateTime londonTime = ZonedDateTime.of(tomorrowTeaTime, lo
+london   
+
+<press tab again to see all possible completions>
+jshell> ZonedDateTime londonTime = ZonedDateTime.of(tomorrowTeaTime, lon
+london   
+
+<press tab again to see all possible completions>
+jshell> ZonedDateTime londonTime = ZonedDateTime.of(tomorrowTeaTime, london
+Signatures:
+london:java.time.ZoneId
+
+<press tab again to see documentation>
+jshell> ZonedDateTime londonTime = ZonedDateTime.of(tomorrowTeaTime, london);
+londonTime ==> 2021-04-09T17:30+01:00[Europe/London]
+
+jshell> ZonedDateTime katmanduTime = lon
+londonTime   
+
+<press tab again to see all possible completions>
+jshell> ZonedDateTime katmanduTime = londonTime.wi
+with(                          withDayOfMonth(                withDayOfYear(                 withEarlierOffsetAtOverlap()   
+withFixedOffsetZone()          withHour(                      withLaterOffsetAtOverlap()     withMinute(                    
+withMonth(                     withNano(                      withSecond(                    withYear(                      
+withZoneSameInstant(           withZoneSameLocal(             
+jshell> ZonedDateTime katmanduTime = londonTime.withZon
+withZoneSameInstant(   withZoneSameLocal(     
+jshell> ZonedDateTime katmanduTime = londonTime.withZoneSameInstant(katmandu);
+katmanduTime ==> 2021-04-09T22:15+05:45[Asia/Katmandu]
+
+jshell> katma
+katmandu       katmanduTime   
+jshell> katmanduTime.getOffset()
+$64 ==> +05:45
+
+jshell> import java.time.format.DataTimeFormatter;
+|  Error:
+|  cannot find symbol
+|    symbol:   class DataTimeFormatter
+|  import java.time.format.DataTimeFormatter;
+|         ^--------------------------------^
+
+jshell> import java.time.format.DateTimeFormatter;
+
+jshell> String datePattern ="EE, 'd' of 'MMM yyyy' at 'HH:mm z";
+datePattern ==> "EE, 'd' of 'MMM yyyy' at 'HH:mm z"
+
+jshell> DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern(datePattern, locale);
+|  Exception java.lang.IllegalArgumentException: Unknown pattern letter: o
+|        at DateTimeFormatterBuilder.parsePattern (DateTimeFormatterBuilder.java:1811)
+|        at DateTimeFormatterBuilder.appendPattern (DateTimeFormatterBuilder.java:1708)
+|        at DateTimeFormatter.ofPattern (DateTimeFormatter.java:588)
+|        at (#67:1)
+
+jshell> String datePattern ="EE', 'd' of 'MMM yyyy' at 'HH:mm z";
+datePattern ==> "EE', 'd' of 'MMM yyyy' at 'HH:mm z"
+
+jshell> DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern(datePattern, locale);
+dateFormat ==> Text(DayOfWeek,SHORT)', 'Value(DayOfMonth)' of 'T ... fHour,2)' 'ZoneText(SHORT)
+
+jshell> String timeTxt = dateFormat.for
+format(   
+
+<press tab again to see all possible completions>
+jshell> String timeTxt = dateFormat.format(katman
+katmanduTime   
+
+<press tab again to see all possible completions>
+jshell> String timeTxt = dateFormat.format(katmanduTime);
+timeTxt ==> "Fri, 9 of Apr 2021 at 22:15 NPT"
+
+jshell> import java.util.ResourceBundle;
+
+jshell> import java.text.MessageFormat;
+
+jshell> ResourceBundle msg = ResourceBundle.getBundle("messages",locale);
+msg ==> java.util.PropertyResourceBundle@587c290d
+
+jshell> String offerPattern = msg.getS
+getString(   
+
+<press tab again to see all possible completions>
+jshell> String offerPattern = msg.getString("offer");
+offerPattern ==> "{0}, price: {1} (applied {2} discount), valid until {3}"
+
+jshell> MessageFormat.format(offerPattern, te
+teaTime   teaTxt    
+jshell> MessageFormat.format(offerPattern, teaTxt, pric
+price      priceTxt   
+jshell> MessageFormat.format(offerPattern, teaTxt, priceTxt, rateTxt, timeTxt);
+$75 ==> "Tea, price: £1.73 (applied 6.5% discount), valid until Fri, 9 of Apr 2021 at 22:15 NPT"
+
+jshell> locale = Local
+LocalDate       LocalDateTime   LocalTime       Locale          
+jshell> locale = new Locale("pl", "PL");
+locale ==> pl_PL
+
+jshell> ResourceBundle msg = ResourceBundle.getBundle("messages",locale);
+msg ==> java.util.PropertyResourceBundle@16022d9d
+
+jshell> String offerPattern = msg.getString("offer");
+offerPattern ==> "{0}, cena: {1} (zastosowano {2} rabatu), ważny do {3}"
+
+jshell> String datePattern = msg.getString("dateFormat");
+datePattern ==> "EE', 'd' of 'MMM yyyy' at 'HH:mm z"
+
+jshell> currencyFormat = Num
+Number                  NumberFormat            NumberFormatException   
+jshell> currencyFormat = NumberF
+NumberFormat            NumberFormatException   
+jshell> currencyFormat = NumberFormat.get
+getCurrencyInstance(   getInstance(           getIntegerInstance(    getNumberInstance(     getPercentInstance(    
+
+<press tab again to see all possible completions>
+jshell> currencyFormat = NumberFormat.getCurrencyInstance(locale);
+currencyFormat ==> java.text.DecimalFormat@674dc
+
+jshell> percentFormat = NumberFo
+NumberFormat            NumberFormatException   
+jshell> percentFormat = NumberFormat.getPercentInstance(
+locale   
+
+Signatures:
+NumberFormat NumberFormat.getPercentInstance()
+NumberFormat NumberFormat.getPercentInstance(Locale inLocale)
+
+<press tab again to see documentation>
+jshell> percentFormat = NumberFormat.getPercentInstance(locale);
+percentFormat ==> java.text.DecimalFormat@674dc
+
+jshell> percentFormat.setMax
+setMaximumFractionDigits(   setMaximumIntegerDigits(    
+jshell> percentFormat.setMaximumFractionDigits(2);
+
+jshell> dateFormat = DateTim
+DateTimeException   DateTimeFormatter   
+jshell> dateFormat = DateTimeFormatter.ofP{
+<press tab again to see all possible completions; total possible completions: 615>
+jshell> dateFormat = DateTimeFormatter.ofPattern(dat
+datePattern   
+
+<press tab again to see all possible completions>
+jshell> dateFormat = DateTimeFormatter.ofPattern(datePattern, locale);
+dateFormat ==> Text(DayOfWeek,SHORT)', 'Value(DayOfMonth)' of 'T ... fHour,2)' 'ZoneText(SHORT)
+
+jshell> teaTxt = "Herbata";
+teaTxt ==> "Herbata"
+
+jshell> pric
+price      priceTxt   
+jshell> priceTxt = currencyFormat.fo
+format(   
+
+<press tab again to see all possible completions>
+jshell> priceTxt = currencyFormat.format(price)
+priceTxt ==> "1,73 zł"
+
+jshell> rateTxt = percentFormat.format(rate)
+rateTxt ==> "6,5%"
+
+jshell> timeTxt = dateFormat.fo
+format(   
+
+<press tab again to see all possible completions>
+jshell> timeTxt = dateFormat.format(katm
+katmanduTime   
+
+<press tab again to see all possible completions>
+jshell> timeTxt = dateFormat.format(katmanduTime);
+timeTxt ==> "pt., 9 of kwi 2021 at 22:15 NPT"
+
+jshell> MessageFormat.format(offerPattern, teaTxt, priceTxt, rateTxt, timeTxt);
+$88 ==> "Herbata, cena: 1,73 zł (zastosowano 6,5% rabatu), ważny do pt., 9 of kwi 2021 at 22:15 NPT"
+
+jshell> 
