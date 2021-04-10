@@ -41,6 +41,16 @@ public class Shop {
         Product p1 = pm.createProduct(101, "Tea", BigDecimal.valueOf(1.99), Rating.NOT_RATED);
         pm.printProductReport();
         p1 = pm.reviewProduct(p1, Rating.FOUR_STARS, "Really nice cup of Tea");
+        p1 = pm.reviewProduct(p1, Rating.TWO_STARS, "Poor ea");
+        p1 = pm.reviewProduct(p1, Rating.FIVE_STARS, "Excelent Tea!");
+        p1 = pm.reviewProduct(p1, Rating.FOUR_STARS, "Good Tea");
+        p1 = pm.reviewProduct(p1, Rating.FOUR_STARS, "Fine Tea");
+        p1 = pm.reviewProduct(p1, Rating.ONE_STARS, "Shit Tea");
+        p1 = pm.reviewProduct(p1, Rating.ONE_STARS, "Shit Tea");
+        p1 = pm.reviewProduct(p1, Rating.ONE_STARS, "Shit Tea");
+        p1 = pm.reviewProduct(p1, Rating.ONE_STARS, "Shit Tea");
+        p1 = pm.reviewProduct(p1, Rating.ONE_STARS, "Shit Tea");
+        p1 = pm.reviewProduct(p1, Rating.ONE_STARS, "Shit Tea");
         pm.printProductReport();
 //        Product p2 = pm.createProduct(102, "Coffe", BigDecimal.valueOf(1.99), Rating.FOUR_STARS);
 //        Product p3 = pm.createProduct(103, "Cake", BigDecimal.valueOf(3.99), Rating.FIVE_STARS, LocalDate.now().plusDays(2)); 
